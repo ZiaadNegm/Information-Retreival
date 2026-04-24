@@ -1,0 +1,12 @@
+# --- Jupyter (local only; Colab provides its own) ---
+jupyterlab==4.*
+ipykernel==6.*
+
+# --- Core IR Stage 1 stack ---
+bm25s==0.2.*
+ir_datasets==0.5.*
+pytrec_eval-terrier==0.5.*
+
+# --- Quality-of-life ---
+numpy==1.26.*
+tqdm==4.*
