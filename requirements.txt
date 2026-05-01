@@ -13,3 +13,8 @@ pytrec_eval-terrier==0.5.*
 # Don't pin: Colab pre-installs many packages that require numpy>=2,
 # and a hard pin to 1.26 breaks jax/opencv/rasterio on Colab.
 tqdm==4.*
+
+# --- Git hygiene ---
+# Strips notebook outputs on commit so .ipynb diffs are signal-only.
+# Activate locally with: nbstripout --install
+nbstripout==0.7.*
