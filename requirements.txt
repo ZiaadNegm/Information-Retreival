@@ -9,5 +9,7 @@ ir_datasets==0.5.*
 pytrec_eval-terrier==0.5.*
 
 # --- Quality-of-life ---
-numpy==1.26.*
+# numpy comes in transitively via bm25s / ir_datasets / scipy.
+# Don't pin: Colab pre-installs many packages that require numpy>=2,
+# and a hard pin to 1.26 breaks jax/opencv/rasterio on Colab.
 tqdm==4.*
